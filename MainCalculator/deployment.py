@@ -41,6 +41,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),)
 
+# to-do
+# remove staticroot_dirs
+# try with debug true
 ROOT_URLCONF = 'MainCalculator.urls'
 
 STATIC_URL = 'static/'
