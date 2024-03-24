@@ -103,17 +103,17 @@ def main():
     get_prices()
     combine_json_data(output_file_path, output_file_path2,combined_info)
     #Firestore information
-    fetch_save(API_KEY, 'F17B-412E-CB64',firestore_skus)
+    # fetch_save(API_KEY, 'F17B-412E-CB64',firestore_skus)
     
     # COMPUTE
-    computeinfo()
+    # computeinfo()
     
     
     #Getting storage specs
-    get_storage_specs(endpoint_url,API_KEY,service_filter_storage,output_file_Storage)
-    retrieve_prices_from_json(output_file_Storage,API_KEY,storage_combined)
-    fetch_save(API_KEY, '6F81-5844-456A',block_storage_skus) # Block storage, Persistant Disk
-    fetch_save(API_KEY, 'D97E-AB26-5D95',filestore_skus) # Cloud File Store 
+    # get_storage_specs(endpoint_url,API_KEY,service_filter_storage,output_file_Storage)
+    # retrieve_prices_from_json(output_file_Storage,API_KEY,storage_combined)
+    # fetch_save(API_KEY, '6F81-5844-456A',block_storage_skus) # Block storage, Persistant Disk
+    # fetch_save(API_KEY, 'D97E-AB26-5D95',filestore_skus) # Cloud File Store 
     
     
     #NETWORKING
