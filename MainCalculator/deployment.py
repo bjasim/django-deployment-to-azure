@@ -39,12 +39,15 @@ MIDDLEWARE = [
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),)
 
 ROOT_URLCONF = 'MainCalculator.urls'
 
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 WSGI_APPLICATION = 'MainCalculator.wsgi.application'
+# STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),)
+
 
 
 TEMPLATES = [
