@@ -18,7 +18,7 @@ from aws_app.views import aws_cloudfront_fetch
 
 
 
-
+    
 from testing.views import testing
 # from django.urls import include
 from databaseServer.views import handle_advanced_form_submission
