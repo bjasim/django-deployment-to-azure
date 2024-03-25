@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-tbe-5l69ogamm94tnh7(hj=cc76)6w34l-4%a-@9n+36*49&au'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # ALLOWED_HOSTS = ['*']
 ALLOWED_HOSTS = ['*']
@@ -152,9 +152,15 @@ SPECTACULAR_SETTINGS = {
     # OTHER SETTINGS
 }
 
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:3000",
+# ]
+
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    "https://cloudarchitecture.work",
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 
