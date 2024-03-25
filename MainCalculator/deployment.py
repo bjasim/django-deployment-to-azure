@@ -134,6 +134,6 @@ SPECTACULAR_SETTINGS = {
     # OTHER SETTINGS
 }
 
-CORS_ALLOWED_ORIGINS = [
-    "https://cloudarchitecture.work",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "https://cloudarchitecture.work",
+# ]
